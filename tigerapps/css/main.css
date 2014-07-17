@@ -1,0 +1,32 @@
+body {
+// padding-top: 50px;
+    
+}
+html, body {
+    overflow-x: hidden;
+}
+  
+.header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  background: url(../img/bg.png) center;
+  color: #fff;
+}
+
+.footer {
+    font-size: 10pt;
+}
+
+.panel-title{
+    font-size: 10pt;
+}
+
+.panel-success .panel-heading {
+    background-color: #000;
+    border-color: #000;
+    
+}
+
+.panel-success {
+ border-color: #000;   
+}
