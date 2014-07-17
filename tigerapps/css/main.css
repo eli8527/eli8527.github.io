@@ -18,7 +18,7 @@ html, body {
 }
 
 .panel-title{
-    font-size: 10pt;
+    font-size: 9pt;
 }
 
 .panel-success .panel-heading {
@@ -29,4 +29,8 @@ html, body {
 
 .panel-success {
  border-color: #000;   
+}
+
+.panel-heading {
+padding: 10px 5px; 
 }
