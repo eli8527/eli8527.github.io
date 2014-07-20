@@ -3,7 +3,7 @@ body {
     
 }
 html, body {
-    overflow-x: hidden;
+   overflow-x: hidden;
 }
   
 .header {
@@ -33,4 +33,12 @@ html, body {
 
 .panel-heading {
 padding: 10px 5px; 
+}
+
+.info a {
+    color: #fff;   
+}
+.info a:hover {
+  color: #000;
+    text-decoration: none;
 }
