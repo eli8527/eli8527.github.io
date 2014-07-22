@@ -12,6 +12,7 @@
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
+        <link href="css/hover-min.css" rel="stylesheet">
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
     </head>
@@ -37,24 +38,26 @@
                     <h2>Academic</h2>
                     <div class="row">
                         <div class="col-md-3">
+                            
                             <div class="panel panel-primary" id="icePanel">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">Integrated Course Engine
-                                    <div class="info pull-right">
-                                            <a href="#" rel="popover" tabindex="0" class="fa fa-info-circle" id="iceInfo"></a>
-                                        </div>
+                                    <h3 class="panel-title info">Integrated Course Engine                                             <a href="#" rel="popover" tabindex="0" class="fa fa-info-circle" id="iceInfo"></a>     
                                     </h3>
                                         
                                 </div>
+                                <a href="http://google.com" class="panelLink">
                                 <div class="panel-body text-center">
                                     <i class="fa fa-university fa-3x"></i>
                                 </div>
+                                  </a>  
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="panel panel-primary">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">Princeton Textbook Exchange</h3>
+                                    <h3 class="panel-title info">Princeton Textbook Exchange
+                                            <a href="#" rel="popover" tabindex="1" class="fa fa-info-circle" id="ptxInfo"></a>
+                                    </h3>
                                 </div>
                                 <div class="panel-body text-center">
                                     <i class="fa fa-book fa-3x"></i>
@@ -302,13 +305,15 @@
             <!-- Placed at the end of the document so the pages load faster -->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
             <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-            <script>
-                boxes = $('.panel-title');
+        <script>                
+                     boxes = $('.panel-title');
                 maxHeight = Math.max.apply(
                 Math, boxes.map(function() {
                     return $(this).height();
                 }).get());
                 boxes.height(maxHeight);
+        </script>
+            <script>
                 $(document).ready(function() {
                 $("#iceInfo").popover({ 
                                     trigger: 'focus',
@@ -316,6 +321,12 @@
                                     html: 'true',
                                     placement:'auto',
                                     content: 'ICE is a user-friendy, aesthetically pleasing interface through which Princeton students can have an easy course shopping experience. No more week long attempts at hopefully producing a correct schedule with multiple tabs and scraps of paper.<br /><br /><a href="http://ice.tigerapps.org/ICE3/war/about.html">More Info</a>'});
-                
+                $("#ptxInfo").popover({ 
+                                    trigger: 'focus',
+                                    container: 'body',
+                                    html: 'true',
+                                    placement:'auto',
+                                    content: 'ICE is a user-friendy, aesthetically pleasing interface through which Princeton students can have an easy course shopping experience. No more week long attempts at hopefully producing a correct schedule with multiple tabs and scraps of paper.<br /><br /><a href="http://ice.tigerapps.org/ICE3/war/about.html">More Info</a>'});
+                });     
         </script>
         </body>
