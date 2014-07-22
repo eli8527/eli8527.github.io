@@ -41,11 +41,11 @@
                             
                             <div class="panel panel-primary" id="icePanel">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title info">Integrated Course Engine                                             <a href="#" rel="popover" tabindex="0" class="fa fa-info-circle" id="iceInfo"></a>     
+                                    <h3 class="panel-title info">Integrated Course Engine                                             <a href="#" rel="popover" class="fa fa-info-circle" id="iceInfo"></a>     
                                     </h3>
                                         
                                 </div>
-                                <a href="http://google.com" class="panelLink">
+                                <a href="http://ice.tigerapps.org/" class="panelLink">
                                 <div class="panel-body text-center">
                                     <i class="fa fa-university fa-3x"></i>
                                 </div>
@@ -56,12 +56,14 @@
                             <div class="panel panel-primary">
                                 <div class="panel-heading">
                                     <h3 class="panel-title info">Princeton Textbook Exchange
-                                            <a href="#" rel="popover" tabindex="1" class="fa fa-info-circle" id="ptxInfo"></a>
+                                            <a href="#" rel="popover" class="fa fa-info-circle" id="ptxInfo"></a>
                                     </h3>
                                 </div>
+                                <a href="http://ptx.tigerapps.org/" class="panelLink">
                                 <div class="panel-body text-center">
                                     <i class="fa fa-book fa-3x"></i>
                                 </div>
+                                    </a>
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -315,17 +317,25 @@
         </script>
             <script>
                 $(document).ready(function() {
+                $('html').click(function(e) {
+                    $('[rel=popover]').popover('hide');
+                });
                 $("#iceInfo").popover({ 
-                                    trigger: 'focus',
+                                    trigger: 'manual',
                                     container: 'body',
                                     html: 'true',
-
-                                    content: 'ICE is a user-friendy, aesthetically pleasing interface through which Princeton students can have an easy course shopping experience. No more week long attempts at hopefully producing a correct schedule with multiple tabs and scraps of paper.<br /><br /><a href="http://ice.tigerapps.org/ICE3/war/about.html">More Info</a>'});
+                                    placement:'auto',
+                                    content: 'ICE is a user-friendy, aesthetically pleasing interface through which Princeton students can have an easy course shopping experience. No more week long attempts at hopefully producing a correct schedule with multiple tabs and scraps of paper.<br /><br /><a href="http://ice.tigerapps.org/ICE3/war/about.html">More Info</a>'}).click(function(e) {
+    $(this).popover('toggle');
+    e.stopPropagation();});
                 $("#ptxInfo").popover({ 
-                                    trigger: 'focus',
+                                    trigger: 'manual',
                                     container: 'body',
                                     html: 'true',
-                                    content: 'ICE is a user-friendy, aesthetically pleasing interface through which Princeton students can have an easy course shopping experience. No more week long attempts at hopefully producing a correct schedule with multiple tabs and scraps of paper.<br /><br /><a href="http://ice.tigerapps.org/ICE3/war/about.html">More Info</a>'});
+                                    placement:'auto',
+                                    content: "Buy and sell textbooks to Princeton students! With PTX, finding and getting rid of those annoying books is easier than ever. PTX is a great way to find cheap textbooks and sell your used textbooks - thousands of books ranging from course books to test review books are listed on the PTX. The best thing is that your sellers and customers are all Princeton students, meaning it's easy to meet up, inspect the textbook, and get paid in cash!"}).click(function(e) {
+    $(this).popover('toggle');
+    e.stopPropagation();});
                 });     
         </script>
         </body>

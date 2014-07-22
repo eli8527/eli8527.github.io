@@ -49,6 +49,7 @@ a.panelLink {
 }
 
 .panel-body {
+    padding: 10px 2px; 
  opacity: 0.7;
     -webkit-transform: scale(1,1);
     -webkit-transition-timing-function: ease-out;
