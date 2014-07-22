@@ -321,7 +321,8 @@
 
             &copy; 2014 Princeton USG IT Committee
             <br /><a href="http://tigerapps.org/">Tiger Apps</a> | <a href="http://princetonusg.com/">Princeton USG</a> | <a href="http://princeton.edu/">Princeton University</a>
-            <br /><small>Portal developed by Eric Li '17</small><br />
+            <br /><small>Portal developed by Eric Li '17</small>
+            <br />
 
         </div>
     </div>
@@ -336,12 +337,13 @@
                 return $(this).height();
             }).get());
         boxes.height(maxHeight);
+
+        $('html').click(function (e) {
+            $('[rel=popover]').popover('hide');
+        });
     </script>
     <script>
         $(document).ready(function () {
-            $('html').click(function (e) {
-                $('[rel=popover]').popover('hide');
-            });
             $("#iceInfo").popover({
                 trigger: 'manual',
                 container: 'body',
