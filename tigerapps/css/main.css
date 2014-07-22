@@ -1,71 +1,107 @@
+html,
 body {
-// padding-top: 50px;
-    
+    overflow-x: hidden;
 }
-html, body {
-   overflow-x: hidden;
-}
-  
 .header {
     padding-top: 25px;
     padding-bottom: 25px;
-  background: url(../img/bg.png) center;
-  color: #fff;
+    background: url(../img/bg.png) center;
+    color: #fff;
 }
-
 .footer {
     font-size: 10pt;
+    line-height: 200%;
 }
-
-.panel-title{
+.footer a:hover {
+    text-decoration: none;
+}
+.footer a:active {
+    text-decoration: none;
+}
+.panel-title {
     font-size: 9pt;
-    
 }
-
 .panel-success .panel-heading {
     background-color: #000;
     border-color: #000;
-    
 }
-
 .panel-success {
- border-color: #000;   
+    border-color: #000;
 }
-
 .panel-heading {
     text-align: center;
-padding: 10px 2px; 
+    padding: 10px 2px;
 }
-
 .info a {
-    color: #fff;   
+    color: #fff;
 }
 .info a:hover {
-  color: #000;
+    color: #000;
+    text-decoration: none;
+}
+.info a:active {
+    color: #000;
+    text-decoration: none;
+}
+.info-usg a {
+    color: #000;
+}
+.info-usg a:hover {
+    color: #708090;
+    text-decoration: none;
+}
+.info-usg a:active {
+    color: #708090;
+    text-decoration: none;
+}
+.info-u a {
+    color: #fff;
+}
+.info-u a:hover {
+    color: #F6891F;
+    text-decoration: none;
+}
+.info-u a:active {
+    color: #F6891F;
     text-decoration: none;
 }
 a.panelLink {
-  color:#000;   
+    color: #000;
 }
-
 .panel-body {
-    padding: 10px 2px; 
- opacity: 0.7;
-    -webkit-transform: scale(1,1);
+    text-align: center;
+    padding: 10px 6px;
+    opacity: 0.7;
+    -webkit-transform: scale(1, 1);
     -webkit-transition-timing-function: ease-out;
     -webkit-transition-duration: 250ms;
-    -moz-transform: scale(1,1);
+    -moz-transform: scale(1, 1);
     -moz-transition-timing-function: ease-out;
-    -moz-transition-duration: 250ms;   
+    -moz-transition-duration: 250ms;
 }
 .panel-body:hover {
     opacity: 1;
-    -webkit-transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.2, 1.2);
     -webkit-transition-timing-function: ease-out;
     -webkit-transition-duration: 250ms;
-    -moz-transform: scale(1.2,1.2);
+    -moz-transform: scale(1.2, 1.2);
     -moz-transition-timing-function: ease-out;
     -moz-transition-duration: 250ms;
     position: relative;
     z-index: 99;
+}
+.panel-body:active {
+    opacity: 1;
+    -webkit-transform: scale(1.2, 1.2);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.2, 1.2);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+    position: relative;
+    z-index: 99;
+}
+#dev {
+    font-size: 10pt;
+    padding: 5px 5px 5px;
 }
