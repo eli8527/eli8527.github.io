@@ -344,6 +344,12 @@
     </script>
     <script>
         $(document).ready(function () {
+
+            var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+
+            if (isMobile.matches) {
+                $('[rel=popover]').popover('hide');
+            }
             $("#iceInfo").popover({
                 trigger: 'manual',
                 container: 'body',
