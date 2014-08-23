@@ -5,7 +5,8 @@ body {
 .header {
     padding-top: 25px;
     padding-bottom: 25px;
-    background: url(../img/bg.png) center;
+    background: url(../img/princetonlowpoly.png);
+    background-size: 100% 100%;
     color: #fff;
 }
 .footer {
