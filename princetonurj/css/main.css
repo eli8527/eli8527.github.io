@@ -1,0 +1,11 @@
+body {
+  padding-top: 50px;
+}
+html, body {
+    overflow-x: hidden;
+}
+  
+.jumbotron {
+  background: url(../img/dna.jpg) center;
+  color: #fff;
+}
