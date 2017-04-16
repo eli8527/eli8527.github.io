@@ -9,7 +9,7 @@ var url = "https://api.apixu.com/v1/current.json?key=c1412fa6ab40430fbb783311171
 function setup() { 
   noCursor();
   background(0);
-  createCanvas(windowWidth-1, windowHeight-1);
+  createCanvas(windowWidth, windowHeight);
   colorMode(HSB, 255);
   
   loadJSON(url, gotWeather);
